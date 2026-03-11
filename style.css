@@ -1,0 +1,167 @@
+body{
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+#main{
+    width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+#text{
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+#text h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    color: blue;
+}
+
+#text p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+#expenses{
+    padding: 0 20px 0 20px;
+}
+
+#expenses h3{
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+#expenses-i{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.expenses-field{
+    width: 45%;
+}
+
+.expenses-field label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #374151;
+}
+
+.expenses-field input{
+    flex: 1;
+}
+
+.expenses-input{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.expenses-input span{
+    margin-right: 5px;
+}
+
+#percent{
+    font-size: 15px;
+}
+
+#expenses p{
+    font-size: 15px;
+    color: #374151;
+}
+
+#spendings{
+    padding: 0 20px;
+}
+
+#spendings h3{
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+.income{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 10px;
+}
+
+.income input{
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-group button{
+    font-size: 18px;
+    border:solid #374151 1px;
+    border-radius: 3px;
+}
+
+#bal-div{
+    margin: 20px auto;
+    width: 660px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.balance{
+    width: 190px;
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.balance h4{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.balance h2{
+    font-size: 20px;
+}
+
+.balance:last-child h2{
+    color: green;
+}
+
+#submit{
+    padding: 10px 270px;
+    margin: 8px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+#reset{
+    padding: 7px 290px;
+    margin: 0 35px 15px 35px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.income button{
+    margin-left: 0;
+    gap: 0;
+}
+

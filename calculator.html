@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" onsubmit="calculatExpenses(event)">
+        <div id="text">
+            <h1>Monthly Expenses Calculator</h1>
+            <p>Calculate salary, tax, and expenses</p>
+        </div>
+        <hr>
+        <form action="" id="incomeForm">
+        <div id="expenses">
+            <h3>Income & Tax</h3>
+
+           <div id="expenses-i">
+                <div class="expenses-field">
+                    <label for="">Monthly Salary</label>
+                    <div class="expenses-input">
+                        <span>&#8358;</span>
+                        <input type="number" id="salary">
+                    </div>
+                </div>
+
+                <div class="expenses-field">
+                    <label for="">Tax</label>
+                    <div class="expenses-input">
+                        <span>&#8358;</span>
+                        <input type="number" id="tax">
+                        <select name="percent" id="taxType">
+                          <option value="percent">%</option>
+                          <option value="amount">&#8358;</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+           </div>
+           <p>Net Salary: &#8358;<span id="netsal">0.00</span></p>
+        </div>
+        </form>
+        <hr>
+        <div id="spendings">
+            <form action="">
+               <h3>Expenses</h3>
+
+                <div id="spendings-i">
+                    <div class="income">
+                       <input type="text">
+                       <input type="number" class="num-inp">
+                    </div>
+
+                    <div class="income">
+                        <input type="text">
+                        <input type="number" class="num-inp">
+                    </div>
+
+                    <div class="income">
+                        <input type="text">
+                        <input type="number" class="num-inp">
+                    </div>
+
+                    <div class="income">
+                        <input type="text">
+                        <input type="number" class="num-inp">
+                    </div>
+
+                    <div class="income">
+                        <input type="text">
+                        <input type="number" class="num-inp">
+                    </div>
+
+                    <div class="income">
+                        <input type="text">
+                        <input type="number" class="num-inp">
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" onclick="addMore()">+</button>
+                    <button type="button" onclick="removeLast(this)">x</button>
+                </div>
+            </form>
+        </div>    
+
+        <div id="bal-div">
+            <div class="balance">
+               <h4>Total Expenses</h4>
+               <h2>&#8358;<span id="totale">0.00</span></h2>
+            </div>
+
+            <div class="balance">
+                <h4>Net Salary</h4>
+                <h2>&#8358;<span id="net">0.00</span></h2>
+            </div>
+
+            <div class="balance">
+                <h4>Balance Left</h4>
+                <h2>&#8358;<span id="bal">0.00</span></h2>
+            </div>
+        </div>
+
+        <button type="submit" id="submit">Calculate Budget</button>
+        <button type="reset" id="reset" onclick="resetAll()">Reset</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
